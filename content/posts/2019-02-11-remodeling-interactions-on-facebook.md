@@ -1,17 +1,18 @@
 ---
-title: "Remodelling Interactions on Facebook: my current thoughts"
+title: "Remodelling Interactions on Facebook: current thoughts"
 date: "2019-02-11T12:00:00.000Z"
 template: "post"
+usesKatex: false
 draft: false
 slug: "/blog/remodeling-interaction-on-facebook/"
-img: "/media/neural-network-post/network3.png"
+img: "/media/facebook.png"
 category: "tech"
 tags:
   - "Facebook"
   - "Tech"
 description: "A summary of my current thoughts around Facebook. I focus on the interaction between 2018's events and the strategic signals from Facebook's Q4 earnings call. ."
-prev: "/blog/properly-size-images/"
-next: "/blog/better-profanity-detection-with-scikit-learn/"
+prev: ""
+next: ""
 ---
 ## **Context**
 
