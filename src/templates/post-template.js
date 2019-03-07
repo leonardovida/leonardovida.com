@@ -10,7 +10,6 @@ const PostTemplate = ({ data }) => {
   const { title: siteTitle, subtitle: siteSubtitle, url: siteUrl } = data.site.siteMetadata;
 
   const {
-    canonical,
     img: postImage,
     title: postTitle,
     description: postDescription,
@@ -24,7 +23,6 @@ const PostTemplate = ({ data }) => {
       <NavHeader />
       <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription}>
         <Helmet>
-          {canonical && <link rel="canonical" href={canonical} />}
           <meta property="og:type" content="article" />
           <meta property="og:image" content={siteUrl + postImage} />
           {twitterEmbed && (
@@ -55,8 +53,6 @@ export const fragment = graphql`
         tagSlugs
       }
       frontmatter {
-        canonical
-        disqusIdentifier
         date
         description
         img
@@ -65,7 +61,6 @@ export const fragment = graphql`
         slug
         tags
         title
-        twitterEmbed
       }
     }
   }
