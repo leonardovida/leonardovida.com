@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "name": "victorzhou.com",
+  "name": "leonardovida.com",
   "description": "",
   "main": "n/a",
   "scripts": {
@@ -17,7 +17,7 @@
     "test:watch": "jest --watch --config ./tests/jest-config.js"
   },
   "repository": "",
-  "author": "Victor Zhou <vzhou842@gmail.com>",
+  "author": "Leonardo Vida <lleonardovida@gmail.com>",
   "license": "MIT",
   "keywords": [],
   "dependencies": {
