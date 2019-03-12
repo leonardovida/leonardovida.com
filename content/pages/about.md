@@ -13,6 +13,6 @@ Outside of my research and study, I co-founded a startup (\younico) that had the
 The languages I am most fluent in: R, Python, SQL
 Tools that I often use: Spark, GCP, Airflow, dbt
 
-Here you can find an (hopefully) up-to-date version of my [cv](../public/media/cv.pdf).
+Here you can find an (hopefully) up-to-date version of my [cv](../media/cv.pdf).
 
 The best way to get in touch with me is emailing me at [lleonardovida@gmail.com](mailto:lleonardovida@gmail.com).
