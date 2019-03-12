@@ -10,8 +10,9 @@ Before starting this MSc. I graduated with a degree in Economics from the facult
 
 Outside of my research and study, I co-founded a startup (\younico) that had the aim of enhancing entrepreneurial activity at universities and I am committed to helping social innovative projects. To achieve the latter, I am currently part of Young Innovators, an honours programme that focuses on social innovative entrepreneurship, and I volunteer at <a target="_blank" rel="noopener" href="https://www.volteuropa.org/">Volt</a>, the first pan-european political movement.
 
-The languages I am most fluent in: R, Python, SQL
-Tools that I often use: Spark, GCP, Airflow, dbt
+The languages I am most fluent in: R, Python, SQL.
+
+Tools that I often use: Spark, GCP, Airflow & dbt.
 
 Here you can find an (hopefully) up-to-date version of my [cv](../media/cv.pdf).
 
