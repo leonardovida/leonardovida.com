@@ -5,11 +5,13 @@ import Layout from '../components/Layout';
 import Post from '../components/Post';
 import NavHeader from '../components/NavHeader';
 import SubscribePopup from '../components/SubscribePopup';
+import CarbonAd from '../components/CarbonAd';
 
 const PostTemplate = ({ data }) => {
   const { title: siteTitle, subtitle: siteSubtitle, url: siteUrl } = data.site.siteMetadata;
 
   const {
+    canonical,
     img: postImage,
     title: postTitle,
     description: postDescription,
@@ -23,6 +25,7 @@ const PostTemplate = ({ data }) => {
       <NavHeader />
       <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription}>
         <Helmet>
+          {canonical && <link rel="canonical" href={canonical} />}
           <meta property="og:type" content="article" />
           <meta property="og:image" content={siteUrl + postImage} />
           {twitterEmbed && (
@@ -32,6 +35,15 @@ const PostTemplate = ({ data }) => {
         <Post post={data.markdownRemark} />
       </Layout>
       <SubscribePopup />
+      <div
+        style={{
+          position: 'absolute',
+          top: 'calc((100% - 217px) / 2)',
+          right: 'calc(((100% - 700px) / 2 - 150px) / 2)',
+        }}
+      >
+        <CarbonAd minDisplayWidth={1100} />
+      </div>
     </div>
   );
 };

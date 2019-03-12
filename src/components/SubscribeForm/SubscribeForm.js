@@ -3,17 +3,17 @@ import styles from './SubscribeForm.module.scss';
 
 const SubscribeForm = ({ large, noDescription, noSpacing, inputId }) => (
   <div
-    className={`${styles['container']} ${large ? styles['large'] : ''} ${
-      noSpacing ? styles['no-spacing'] : ''
+    className={`${styles["container"]} ${large ? styles["large"] : ""} ${
+      noSpacing ? styles["no-spacing"] : ""
     }`}
   >
     {!noDescription && (
-      <p className={styles['description']}>
+      <p className={styles["description"]}>
         <b>Subscribe</b> to know whenever I post new content. I don't spam!
       </p>
     )}
     <form
-      action="https://victorzhou.us20.list-manage.com/subscribe/post"
+      action="http://eepurl.com/gjMyQf"
       method="post"
       target="_blank"
     >
