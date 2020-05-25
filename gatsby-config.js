@@ -6,33 +6,34 @@ const postCssPlugins = require('./postcss-config.js');
 module.exports = {
   siteMetadata: {
     url: siteConfig.url,
+    siteUrl: siteConfig.url,
     title: siteConfig.title,
     subtitle: siteConfig.subtitle,
     copyright: siteConfig.copyright,
     disqusShortname: siteConfig.disqusShortname,
     menu: siteConfig.menu,
-    author: siteConfig.author
+    author: siteConfig.author,
   },
   plugins: [
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content`,
-        name: 'pages'
+        name: 'pages',
       }
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/static/media`,
-        name: 'media'
+        name: 'media',
       }
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'assets',
-        path: `${__dirname}/static`
+        path: `${__dirname}/static`,
       }
     },
     {
@@ -138,12 +139,12 @@ module.exports = {
           {
             site {
               siteMetadata {
-                url
+                siteUrl
               }
             }
             allSitePage(
               filter: {
-                path: { regex: "/^(?!/404/|/404.html|/dev-404-page/|/subscriber-thank-you/)/" }
+                path: { regex: "/^(?!/404/|/404.html|/dev-404-page/|/subscriber-thank-you/|/subscription-updated/)/" }
               }
             ) {
               edges {
@@ -155,11 +156,12 @@ module.exports = {
           }
         `,
         output: '/sitemap.xml',
-        serialize: ({ site, allSitePage }) => allSitePage.edges.map(edge => ({
-          url: site.siteMetadata.url + edge.node.path,
-          changefreq: 'daily',
-          priority: edge.node.path === '/' ? 1.0 : 0.7,
-        }))
+        serialize: ({ site, allSitePage }) =>
+          allSitePage.edges.map(edge => ({
+            url: site.siteMetadata.siteUrl + edge.node.path,
+            changefreq: 'daily',
+            priority: edge.node.path === '/' ? 1.0 : 0.7,
+          })),
       }
     },
     {

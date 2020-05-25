@@ -31,13 +31,13 @@ const IndexTemplate = ({ data, pageContext }) => {
 `{
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": "Victor Zhou",
-  "url": "https://victorzhou.com",
+  "name": "Leonardo Vida",
+  "url": "https://leonardovida.com",
   "sameAs": [
-    "https://www.facebook.com/zhouvictor",
-    "https://twitter.com/victorczhou",
-    "https://www.instagram.com/victorczhou/",
-    "https://www.linkedin.com/in/vzhou842/"
+    "https://www.facebook.com/leonardovida",
+    "https://twitter.com/leonardojvida",
+    "https://www.instagram.com/leonardovi/",
+    "https://www.linkedin.com/in/leonardovida/"
   ]
 }`
             }
