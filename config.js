@@ -2,7 +2,6 @@
 
 module.exports = {
   url: 'https://leonardovida.com',
-  siteUrl: 'https://leonardovida.com',
   title: 'leonardovida.com',
   subtitle: 'Data Engineer at Utrecht University. I blog about my opinion on tech and more.',
   copyright: '© Leonardo Vida 2020',
